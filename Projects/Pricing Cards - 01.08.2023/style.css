@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    text-wrap: balance
+}
+
+:root {
+    --dark: rgb(39, 38, 75);
+    --background: rgb(248, 250, 254);
+}
+
+body {
+    background-color: rgb(39, 38, 75);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+main {
+    background-color: var(--background);
+    display: flex;
+    align-content: space-between;
+    gap: 3rem;
+    padding: 5rem;
+    margin: 5rem;
+    border-radius: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+    flex: 1;
+    text-align: center;
+}
+.card ul {
+    text-align: left;
+}
+.tier {
+    background-color: red;
+    text-align: center;
+    border-radius: 6px;
+    padding-block: 1.5em;
+    color: white;
+}
+
+.details {
+    padding-block: 3rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 3em 1.4em;
+}
+
+.details p:last-of-type {
+    padding-top: 1.5em;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: .1em;
+    font-family:;
+}
+.sub-currency {
+    vertical-align: text-top;
+    font-size: .3em;
+    margin: .2em;
+}
+.sub-period {
+    font-size: .3em;
+    margin: .1em;
+}
+
+.free {
+    background-color: var(--background);
+    color: var(--dark);
+}
+
+.lite {
+    background: rgb(195,210,255);
+    background: linear-gradient(90deg, rgba(195,210,255,1) 0%, rgba(198,114,255,1) 100%);
+}
+
+.pro {
+    background: rgb(255,176,196);
+    background: linear-gradient(90deg, rgba(255,176,196,1) 0%, rgba(255,203,111,1) 100%);
+}
+.card:has(.free) {
+    box-shadow: 0px 20px 15px -10px rgba(119, 136, 153, .4);
+}
+.card:has(.lite) {
+    box-shadow: 0px 20px 15px -10px rgba(198,114,255,.4);
+}
+.card:has(.pro) {
+    box-shadow: 0px 20px 15px -10px rgba(255,203,111,.4);
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card li::before {
+    font-family: 'Material Icons';
+    font-size: 1.3em;
+    margin-right: .3ch;
+    vertical-align: text-top;
+}
+.card li[data-available="1"]::before {
+    content: "\e5ca";
+    color: rgb(121, 186, 129);
+}
+.card li[data-available="0"]::before {
+    content: "\e5cd";
+    color: rgb(216, 88, 120);
+}
+div:has(button){
+    padding: .8em;
+}
+.card button {
+    box-sizing: border-box;
+    border: solid 2px var(--dark);
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1.4vw;
+    font-weight: 500;
+    height: 3em;
+    background-color: white;
+    transition: background-color 150ms, color 150ms ;
+    margin-bottom: 1.5em;
+    &:hover {
+        background-color: var(--dark);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.card button#hovered {
+    background-color: var(--dark);
+    color: white;
+    cursor: pointer;
+}
+
+
+ul {
+    margin-inline: 1.5vw;
+    margin-bottom: 2em;
+}
+li {
+    margin-bottom: 1.2em;
+}
