@@ -1,5 +1,5 @@
 # iCodeThis
-Projects from 'icodethis.com'
+Projects from [iCodeThis](https://icodethis.com)
 
 Every project I complete on iCodeThis becomes part of my public profile portfolio (at **https://icodethis.com/VV01T3k**).
 
