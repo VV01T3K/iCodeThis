@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <div>
+            <button onclick="click_anim(this)"><div></div></button>
+        </div>
+        
+        <div>
+
+            <section class="storage-status" onclick="click_anim(this)">
+                <h2>Cloud storage</h2>
+                <div id="loadbar_fullness"><div id="loadbar_filling"></div></div>
+                <p><span id="fullness">285 MB</span> of 1 GB used</p>
+            </section>
+
+            <section class="download-status">
+                <ul>
+                    <li data-status="waiting">
+                        <span class="status">
+                            <div class="circle"><div><span class="material-symbols-rounded">done</span></div></div>
+                            <span>
+                                File syncing
+                                <p>Waiting...</p>
+                            </span>
+                        </span>
+                        <span onclick="click_anim(this)" class="gear material-symbols-rounded">
+                            settings
+                        </span>
+                    </li>
+                        <hr>
+                    <li data-status="waiting">
+                        <span class="status">
+                            <div class="circle"><div><span class="material-symbols-rounded">done</span></div></div>
+                            <span>
+                                Updating Cloud
+                                <p>Waiting...</p>
+                            </span>
+                        </span>
+                        <span onclick="click_anim(this)" class="gear material-symbols-rounded">
+                            settings
+                        </span>
+                    </li>
+                        <hr>
+                    <li data-status="waiting">
+                        <span class="status">
+                            <div class="circle"><div><span class="material-symbols-rounded">done</span></div></div>
+                            <span>
+                                Updating Solutions
+                                <p>Waiting...</p>
+                            </span>
+                        </span>
+                        <span onclick="click_anim(this)" class="gear material-symbols-rounded">
+                            settings
+                        </span>
+                    </li>
+
+                
+                </ul>
+            </section>
+
+            <button onclick="click_anim(this)">Go to downloads</button>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
