@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- do samych ikonek po kodach -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <div id="theme" data-theme="light">
+        <span class="front material-symbols-rounded">dark_mode</span>
+        <span class="back material-symbols-rounded">light_mode</span>
+    </div>
+
+
+    <main data-edit_mode='0'>
+
+
+        <div class="editable_banner shadow">
+
+            <div>
+                <p><span class="material-symbols-rounded">home</span></p>
+                <p class="category_title UPPERCASE">TYPE OF DWELLING</p>
+                <p class="user_input bold">Detached</p>
+            </div>
+
+            <div>
+                <p><span class="material-symbols-rounded">crop</span></p>
+                <p class="category_title UPPERCASE">LIVING AREA</p>
+                <p class="user_input bold">147 m2</p>
+            </div>
+
+            <div>
+                <p><span class="material-symbols-rounded">attach_money</span></p>
+                <p class="category_title UPPERCASE">CONSIDERED TO SOLD WITHIN</p>
+                <p class="user_input bold">1 year</p>
+            </div>
+
+            <span onclick="main.dataset.edit_mode = 1;" class="material-symbols-rounded">edit</span>
+
+        </div>
+
+        <div class="edit_menu shadow">
+
+            <section>
+                <h2>Edit</h2>
+                <p>Enter details and let other users know when you are considering selling the property</p>
+            </section>
+
+            <section class="editable_banner">
+
+                <div>
+                    <p><span class="material-symbols-rounded">home</span></p>
+                    <p class="category_title UPPERCASE">TYPE OF DWELLING</p>
+                    <p class="user_input bold">
+                        <select name="type">
+                            <option value="Detached">Detached</option>
+                            <option value="House">House</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Mobile Home">Mobile Home</option>
+                        </select>
+                    </p>
+                </div>
+                
+                <div>
+                    <p><span class="material-symbols-rounded">crop</span></p>
+                    <p class="category_title UPPERCASE">LIVING AREA</p>
+                    <p class="user_input bold"><input type="number" placeholder="147" value="147" name="area"></p>
+                </div>
+                
+                <div>
+                    <p><span class="material-symbols-rounded">attach_money</span></p>
+                    <p class="category_title UPPERCASE">CONSIDERED TO SOLD WITHIN</p>
+                    <p class="user_input bold">
+                        <select name="time">
+                            <option value="1 year">1 year</option>
+                            <option value="2 year">2 year</option>
+                            <option value="3 year">3 year</option>
+                            <option value="4 year">4 year</option>
+                        </select>
+                    </p>
+                </div>
+
+            </section>
+
+            <section>
+
+                <button class="cancel bold click_effect" onclick="main.dataset.edit_mode = 0;" class="material-symbols-rounded" data-shadow='dark'>Cancel</button>
+
+                <button class="save bold click_effect" onclick="save();" data-shadow='dark'>Save</button>
+
+            </section>
+
+            <span onclick="main.dataset.edit_mode = 0;" class="material-symbols-rounded">close</span>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
