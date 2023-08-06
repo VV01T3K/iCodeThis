@@ -2,51 +2,64 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1920"
-   height="1080"
-   viewBox="0 0 1920 1080"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
    version="1.1"
    id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px" />
   <defs
      id="defs1" />
   <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
      id="layer1">
     <rect
        style="fill:#606dfe;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0"
        id="rect5"
-       width="326.74472"
-       height="1961.3115"
-       x="1151.2031"
-       y="-858.27344"
-       ry="11.624546"
+       width="158.24239"
+       height="949.86273"
+       x="210.83788"
+       y="-335.99792"
+       ry="5.629765"
        transform="rotate(15)" />
     <rect
        style="fill:#fdbaff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0"
        id="rect4"
-       width="1154.0984"
-       height="1753.63"
-       x="1314.5756"
-       y="-650.59186"
-       ry="8.9929743"
+       width="558.92963"
+       height="849.28265"
+       x="289.95908"
+       y="-235.41783"
+       ry="4.3552957"
        transform="rotate(15)" />
+    <rect
+       style="fill:#ff6600;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;paint-order:normal"
+       id="rect1"
+       width="66.728386"
+       height="263.4201"
+       x="367.51059"
+       y="290.3959"
+       ry="0" />
     <rect
        style="fill:#606dfe;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0"
        id="rect2"
-       width="413.67682"
-       height="1229.8829"
-       x="1561.7799"
-       y="-59.953133"
-       ry="8.4570417" />
-    <rect
-       style="fill:#ff7f2a;fill-rule:evenodd;stroke:#000000;stroke-width:0"
-       id="rect3"
-       width="82.329079"
-       height="614.94147"
-       x="1479.4508"
-       y="554.98834"
-       ry="10.53339"
-       rx="0" />
+       width="200.34358"
+       height="595.63202"
+       x="400.87479"
+       y="-41.81601"
+       ry="4.0957432" />
   </g>
 </svg>
