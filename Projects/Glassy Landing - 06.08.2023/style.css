@@ -1,0 +1,206 @@
+
+/* --------------------Reset----------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ------------------global-variables------------------ */
+
+:root {
+
+    --clr-primary: hsl(243, 42%, 27%);
+    --clr-secondary: hsl(235, 99%, 69%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-300: hsl(0, 0%, 100%);
+
+    --transition-time: 50ms;
+
+    --shadow: 0px 4px 10px -2px rgba(0, 0, 0, .2);
+    --radius: 5px;
+
+}
+
+/* -------------------stage-setup---------------------- */
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    font-size: clamp(0.2rem, 1vw + .2rem, .8rem);
+    padding-top: 10vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center ; */
+    
+    background-color: rgb(245, 236, 236);
+    color: var(--clr-primary);
+
+    font-family: 'Roboto', system-ui;
+    font-weight: 500;
+    text-wrap: balance;
+
+}
+* {
+    line-height: 1.5;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+
+/* --- this encoded svg from my private repository on github so it can be used "locally" in css (not ideal 😵) --- */
+    background-image: url("data:image/svg+xml,%3Csvg width='512' height='512' viewBox='0 0 512 512' version='1.1' id='svg1' inkscape:export-filename='cos.svg' inkscape:export-xdpi='96' inkscape:export-ydpi='96' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Csodipodi:namedview id='namedview1' pagecolor='%23505050' bordercolor='%23eeeeee' borderopacity='1' inkscape:showpageshadow='0' inkscape:pageopacity='0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%23505050' inkscape:document-units='px' /%3E%3Cdefs id='defs1' /%3E%3Cg inkscape:label='Warstwa 1' inkscape:groupmode='layer' id='layer1'%3E%3Crect style='fill:%23606dfe;fill-opacity:1;fill-rule:evenodd;stroke:%23000000;stroke-width:0' id='rect5' width='158.24239' height='949.86273' x='210.83788' y='-335.99792' ry='5.629765' transform='rotate(15)' /%3E%3Crect style='fill:%23fdbaff;fill-opacity:1;fill-rule:evenodd;stroke:%23000000;stroke-width:0' id='rect4' width='558.92963' height='849.28265' x='289.95908' y='-235.41783' ry='4.3552957' transform='rotate(15)' /%3E%3Crect style='fill:%23ff6600;fill-rule:evenodd;stroke:%23000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;paint-order:normal' id='rect1' width='66.728386' height='383.71457' x='367.51059' y='170.10144' ry='0' /%3E%3Crect style='fill:%23606dfe;fill-opacity:1;fill-rule:evenodd;stroke:%23000000;stroke-width:0' id='rect2' width='200.34358' height='595.63202' x='400.87479' y='-41.81601' ry='4.0957432' /%3E%3C/g%3E%3C/svg%3E");
+/* ----------------------------------------------------------------------------------------- */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+/* --------------------MISC------------------- */
+
+.shadow {
+    box-shadow: var(--shadow);
+}
+.UPPERCASE {
+    text-transform: uppercase;
+}
+:where(.bold) { /* ':where' to not change specificity of color */
+    color: var(--clr-neutral-900);
+    font-weight: bold;
+}
+
+/* ------------------buttons--------------------- */
+
+button {
+    box-sizing: content-box;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    width: 14ch;
+    aspect-ratio: 3/1.3;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-100);
+    font-weight: 500;
+}
+.click_effect {
+    transition: scale var(--transition-time), box-shadow var(--transition-time);
+}
+.click_effect:hover {
+    cursor: pointer;
+    scale: 1.03;
+}
+
+/* ---------------------------------------------- */
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Merriweather', system-ui;
+}
+
+nav {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo svg {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5em;
+}
+
+a, .pseudo-button{
+    display: inline-block;
+    color: var(--clr-secondary);
+    width: fit-content;
+}
+.select-link {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.select-link span {
+    font-weight: 750;
+}
+
+.articles {
+    display: flex;
+    gap: 1.5ch;
+}
+.articles article {
+    flex: 1;
+    background-color: var(--clr-neutral-100);
+    padding: 2em;
+    display: grid;
+    border-radius: var(--radius);
+    transition: scale 120ms;
+}
+.articles article h2 {
+    padding-bottom: 1em;
+}
+.articles article h2:hover,
+.articles article p:hover {
+    cursor: auto;
+}
+
+.articles article:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.pseudo-button {
+    background: none;
+    box-sizing: content-box;
+    border: 1px solid hsl(235, 96%, 89%);
+    border-radius: 100rem;
+    aspect-ratio: 3.4/1;
+    font-weight: 600;
+    width: 15ch;
+}
+
+main {
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(12px);
+    padding: 3em 3.5em;
+    width: clamp(0rem, 80vw + 5rem, 65rem);
+    margin: auto;
+    height: 90vh;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+main > section {
+    padding: 6vw 4vw ;
+}
+
+main > section > p {
+    font-size: 1.3em;
+    width: 50%;
+    padding-top: 3%;
+    padding-bottom: 15%;
+}
+
+h1 {
+    font-size: 3em;
+    width: 50%;
+}
