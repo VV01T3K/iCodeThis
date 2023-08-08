@@ -65,7 +65,7 @@ function handle_people() {
     }
 }
 
-let max_added = 3;
+let max_added = 2;
 
 function add_people() {
     
