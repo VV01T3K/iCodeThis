@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- do samych ikonek po kodach -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <main class="shadow">
+
+        <div class="nav align">
+
+            <span class="back material-symbols-rounded click_effect">undo</span>
+
+            <label class="align click_effect" data-rot="0" onclick="this.dataset.rot ^= 1">
+                <span class="Rpad">Settings</span>
+                <span class="gear material-symbols-rounded">settings</span>
+            </label>
+
+        </div>
+
+        <section class="content">
+
+            <h2>
+                Share with people and groups
+            </h2>
+
+            <div class="bar align">
+
+                <div class="people align Rpad click_effect" data-added="1">
+                    <img src="https://i.pravatar.cc/100?img=1" class="Rpad">
+                    <span class="Rpad">Emma James</span>
+                </div>
+
+                <button class="add-people align click_effect" onclick="handle_people();">
+                    <span class="material-symbols-rounded">add</span>
+                </button>
+
+            </div>
+
+            <div class="people-list bar" data-toggle="0">
+
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=10" class="Rpad">
+                    <span class="Rpad">Emily Johnson</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=3" class="Rpad">
+                    <span class="Rpad">Daniel Martinez</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=4" class="Rpad">
+                    <span class="Rpad">Liam Anderson</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=5" class="Rpad">
+                    <span class="Rpad">Sophia Thompson</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=6" class="Rpad">
+                    <span class="Rpad">Jackson Lee</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=7" class="Rpad">
+                    <span class="Rpad">Ethan Rodriguez</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=8" class="Rpad">
+                    <span class="Rpad">Noah Patel</span>
+                </div>
+                <div class="people align Rpad click_effect" data-added="0">
+                    <img src="https://i.pravatar.cc/100?img=9" class="Rpad">
+                    <span class="Rpad">Isabella Davis</span>
+                </div>
+
+            </div>
+
+            
+            <label class="align" onclick="this.children[0].dataset.checked ^= 1;">
+                <div class="checkbox Rpad click_effect" data-checked="0">
+                    <span class="material-symbols-rounded">check</span>
+                </div>
+                Notify people
+            </label>
+
+        </section>
+
+
+        <div class="nav align">
+
+            <a class="click_effect">Send feedback</a>
+
+            <div class="nav">
+
+                <button class="cancel Rpad click_effect">Cancel</button>
+                <button class="send click_effect" onclick="load(this);">Send</button>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
