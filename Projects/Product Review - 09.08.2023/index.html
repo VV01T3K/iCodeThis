@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- do samych ikonek po kodach -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <main>
+
+        <section class="panel"></section>
+        
+        <section class="card">
+
+            <div class="close">
+                <span class="material-symbols-rounded click_effect">close</span>
+            </div>
+
+            <section>
+                <h2 class="pad2">Overall rating</h2>
+                <div class="stars material-symbols-outlined pad2">
+                    <div data-state="1">star</div>
+                    <div data-state="1">star</div>
+                    <div data-state="1">star</div>
+                    <div data-state="0">star</div>
+                    <div data-state="0">star</div>
+                </div>
+                <p>Click to rate</p>
+            </section>
+
+            <section>
+                <h4 class="pad2">Review title</h4>
+                <input  type="text" placeholder="Example: Easy to use">
+            </section>
+
+            <section>
+                <h4>Would you recommend this product to a friend?</h4>
+                <section class="recomend-sec">
+                    <label class="recommend"><input type="radio" name="recommend"><strong>Yes</strong></label>
+                    <label class="recommend"><input type="radio" name="recommend"><strong>No</strong></label>
+                </section>
+            </section>
+
+            <section>
+                <h4>Product review</h4>
+                <textarea placeholder="Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ..." cols="30" rows="2"></textarea>
+            <section class="contact pad">
+
+                <section>
+                    <h4>Nickname</h4>
+                    <input type="text" placeholder="Example: bob27">
+                </section>
+
+                <section >
+                    <h4>Email address (will not be published)</h4>
+                    <input type="text" placeholder="Example: your@email.com">
+                </section>
+
+            </section>
+            </section>
+
+
+            <section>
+                <label class="terms"><input type="checkbox" name="terms"><strong>I accept the terms and conditions</strong></label>
+            </section>
+
+            <section class="disclose">
+                <p>
+                        You will be able to receive emails in connection with this review (eg if others comment on your review) All emails contain the option to usubscribe. We can use the text and star rating from review in other marketing.
+                </p>
+            </section>
+
+            <section>
+                <button class="button click_effect">
+                    Submit product review
+                </button>
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
