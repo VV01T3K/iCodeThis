@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- do samych ikonek po kodach -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <div class="background">
+        <div class="backdrop"></div>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+    </div>
+
+    <main>
+
+        <div class="close">
+            <span class="material-symbols-rounded click_effect">close</span>
+        </div>
+
+        <section class="content">
+
+            <h2>Enjoyed the read?</h2>
+            <p>Join our monthly newsletter for helpful tips on design and more.</p>
+
+        </section>
+
+        <section class="form">
+
+            <input type="text" class="click_effect" placeholder="Your email address">
+
+            <label class="align click_effect" onclick="this.children[0].dataset.checked ^= 1;">
+
+                <div class="checkbox Rpad click_effect" data-checked="0">
+                    <span class="material-symbols-rounded">check</span>
+                </div>
+
+                <span>I agree to receive this newsletter and subscribe at any time</span>
+                
+            </label>
+
+            <button class="button">SUBSCRIBE</button>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
