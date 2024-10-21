@@ -10,6 +10,7 @@ Every project I complete on iCodeThis becomes part of my public profile portfoli
 
 ## My recent submissions:
 
+- [Birthday List - 21.10.2024](https://github.com/VV01T3k/iCodeThis/tree/main/Projects/Birthday%20List%20-%2021.10.2024)
 - [Accordion 4 - 11.08.2023](https://github.com/VV01T3k/iCodeThis/tree/main/Projects/Accordion%204%20-%2011.08.2023)
 - [Subscribe Popup - 10.08.2023](https://github.com/VV01T3k/iCodeThis/tree/main/Projects/Subscribe%20Popup%20-%2010.08.2023)
 - [Product Review - 09.08.2023](https://github.com/VV01T3k/iCodeThis/tree/main/Projects/Product%20Review%20-%2009.08.2023)
